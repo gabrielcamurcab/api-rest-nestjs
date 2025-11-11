@@ -1,0 +1,45 @@
+{
+  "name": "api-rest-nodejs-solid",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Um API de academias por assinatura",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielcamurcab/api-rest-nodejs-academias.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielcamurcab/api-rest-nodejs-academias/issues"
+  },
+  "homepage": "https://github.com/gabrielcamurcab/api-rest-nodejs-academias#readme",
+  "devDependencies": {
+    "@types/node": "24.9.2",
+    "@vitest/coverage-v8": "4.0.7",
+    "@vitest/ui": "4.0.7",
+    "prisma": "6.18.0",
+    "tsup": "8.5.0",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "4.0.7"
+  },
+  "dependencies": {
+    "@prisma/client": "6.18.0",
+    "bcryptjs": "3.0.2",
+    "dotenv": "17.2.3",
+    "fastify": "5.6.1",
+    "zod": "4.1.12"
+  }
+}
