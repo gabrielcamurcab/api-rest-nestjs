@@ -1,4 +1,4 @@
-import { BadRequestException, Body, ConflictException, Controller, HttpCode, Post, UnauthorizedException, UsePipes } from "@nestjs/common";
+import { Body, Controller, Post, UnauthorizedException, UsePipes } from "@nestjs/common";
 import { PrismaService } from "../prisma/prisma.service.js";
 import { compare, hash } from 'bcryptjs';
 import { email, z } from 'zod';
