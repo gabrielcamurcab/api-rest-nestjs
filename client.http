@@ -30,6 +30,13 @@ Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-    "title": "Pergunta inaugural",
-    "content": "O que você está fazendo?"
+    "title": "Segunda inaugural",
+    "content": "Como faz isso?"
 }
+
+###
+
+# @name fetch_questions
+GET {{baseUrl}}/questions?page=1
+Content-Type: application/json
+Authorization: Bearer {{authToken}}

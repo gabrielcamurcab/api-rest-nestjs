@@ -18,7 +18,7 @@ type CreateQuestionBodySchema = z.infer<typeof createQuestionBodySchema>
 
 @Controller('/questions')
 @UseGuards(JwtAuthGuard)
-export class CreatQuestionController {
+export class CreateQuestionController {
     constructor(
         private prisma: PrismaService
     ) {}
